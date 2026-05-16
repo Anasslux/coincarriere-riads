@@ -1,0 +1,87 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast mixed with Organic & Earthy",
+  "domain": "Recruitment & Hospitality (B2B SaaS)",
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Inter",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none text-ink font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight leading-tight text-ink font-semibold",
+      "h3": "text-xl sm:text-2xl font-semibold text-cc-navy",
+      "body": "text-base text-cc-navy/80 leading-relaxed",
+      "overline": "text-xs font-bold tracking-[0.2em] uppercase text-cc-cyan"
+    }
+  },
+  "colors": {
+    "cc_cyan": "#0094d9",
+    "cc_blue": "#16498c",
+    "cc_mid_blue": "#1875bb",
+    "cc_navy": "#0b3f59",
+    "cc_lime": "#dcfe11",
+    "cc_lime_2": "#ccfa04",
+    "cc_green": "#b4dc02",
+    "soft_bg": "#f5fbff",
+    "cream": "#fbf5ea",
+    "ink": "#102532",
+    "surface": {
+      "card": "#ffffff",
+      "glass": "bg-white/70 backdrop-blur-xl border border-white/60",
+      "dark_glass": "bg-cc-navy/80 backdrop-blur-2xl border border-white/10"
+    }
+  },
+  "layout": {
+    "spacing": "Generous. p-8, p-12, py-24. Tailwind scale.",
+    "grid": "Bento grids for features. Split layout for hero. Mobile-first.",
+    "borderRadius": "rounded-2xl for cards, rounded-full for buttons."
+  },
+  "components": {
+    "buttons": "Primary: bg-cc-navy text-white hover:bg-ink. Accent: bg-cc-lime text-cc-navy hover:bg-cc-lime-2. Both should be rounded-full with px-6 py-3 for substantial feel.",
+    "navigation": "Sticky top-0 z-50 glassmorphism bg-soft-bg/80 backdrop-blur-xl border-b border-cc-mid-blue/10.",
+    "cards": "White background, subtle shadow-sm, 1px border-cc-mid-blue/10, hover:-translate-y-1 transition-all duration-300."
+  },
+  "motion": {
+    "scroll": "Framer motion scroll reveal (y: 20, opacity: 0 -> y: 0, opacity: 1) on section load.",
+    "compass": "Unexpected Design Move: A glowing compass element rendered behind the hero dashboard. Needs to have a slowly rotating halo and an animated needle pointing to 'Recruitment Success'. Can use the generated compass_dial image with CSS rotation, layered with glowing divs (bg-cc-cyan blur-3xl).",
+    "chart": "Horizontal bar charts in the Market Data section animating width from 0 to their target percentage on inView.",
+    "steps": "Vertical or horizontal line with a progress fill animation highlighting the 4 steps on scroll.",
+    "dashboard_float": "Subtle floating animation (y: -5 to 5) for the glassy product card in the hero section."
+  },
+  "images": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1505576391880-b3f9d713dc4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHxyaWFkJTIwbW9yb2NjbyUyMGFyY2hpdGVjdHVyZSUyMGludGVyaW9yfGVufDB8fHx8MTc3ODk1NjUxOXww&ixlib=rb-4.1.0&q=85",
+      "description": "Subtle Riad interior. Use as hero background with a heavy soft-bg overlay (e.g. bg-soft-bg/90) to provide subtle warmth and texture without reducing text contrast."
+    },
+    "compass_dial": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/8a6f1a07-df26-42cd-a925-e6bee816ed00/images/9c5e41bed51bd2ff1dc439795d6b13eaceb0110386bb68b8619b7130401f4d6e.png",
+      "description": "3D generated compass dial for the unexpected design move behind the hero dashboard."
+    },
+    "candidate_1": {
+      "url": "https://images.unsplash.com/photo-1721924960760-bb134eb9c679?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMG1vcm9jY2FuJTIwY2hlZiUyMG9yJTIwcmVjZXB0aW9uaXN0fGVufDB8fHx8MTc3ODk1NjUzN3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Candidate portrait for dashboard demo (Chef/Cuisine)."
+    },
+    "candidate_2": {
+      "url": "https://images.unsplash.com/photo-1728032038577-13053f714028?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMG1vcm9jY2FuJTIwY2hlZiUyMG9yJTIwcmVjZXB0aW9uaXN0fGVufDB8fHx8MTc3ODk1NjUzN3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Candidate portrait for dashboard demo (Receptionist)."
+    },
+    "candidate_3": {
+      "url": "https://images.unsplash.com/photo-1756699279298-c89cdef354ab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMG1vcm9jY2FuJTIwY2hlZiUyMG9yJTIwcmVjZXB0aW9uaXN0fGVufDB8fHx8MTc3ODk1NjUzN3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Candidate portrait for dashboard demo (Service)."
+    }
+  },
+  "icons": "lucide-react",
+  "sections_instructions": {
+    "navigation": "Sticky top bar. Links: Votre réalité, Données, Méthode, Démo, Fonctionnalités. CTA: Publier mon besoin.",
+    "hero": "Split layout. Left: Badge, Headline, Subtitle, CTA (external link), Stats (462+ entreprises / 4949+ offres / 100% gratuit). Right: Glassmorphism dashboard preview overlapping the animated compass needle motif. Include the compass dial image rotating behind the glassy UI.",
+    "problem": "Heading: 'Vous gérez déjà assez de choses.' Grid of 4 cards showing empathy for Riad owners' struggles.",
+    "trust": "Official proof section. Bold metrics with minimal supporting text.",
+    "data_chart": "Official Market Data section. 8 horizontal bars representing sectors. Use cc-cyan for 7 bars, cc-lime for the top sector. Animate width on scroll.",
+    "how_it_works": "4 connected step cards (Publiez/Recevez/Évaluez/Embauchez) with an animated scroll line connecting them.",
+    "riad_benefits": "6 cards (Réception, Ménage, Cuisine, Service, Haute saison, Qualité avis) styled in a bento grid.",
+    "dashboard_demo": "Label: 'Simulation de démo — exemple Riad'. A realistic browser frame component showing a mock Kanban board (Nouveau, Présélection, Entretien, Retenu) with candidate cards using provided images.",
+    "recruiter_features": "Grid of 6 feature cards.",
+    "cta_final": "High impact section. Background ink or cc-navy. CTA button in cc-lime. Includes a lead capture form or link to external signup.",
+    "footer": "Clean, minimal footer."
+  },
+  "testing": "All interactive and key informational elements MUST include a `data-testid` attribute in kebab-case."
+}
