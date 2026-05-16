@@ -24,18 +24,13 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="#top" data-testid="nav-logo" className="flex items-center gap-2.5 group">
-          <span className="inline-flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-xl overflow-hidden bg-ink ring-1 ring-cc-mid-blue/15">
-            <img
-              src="/brand/coincarriere-logo.png"
-              alt="CoinCarrière"
-              className="h-full w-full object-contain scale-110"
-              draggable={false}
-            />
-          </span>
-          <span className="font-display font-semibold text-ink tracking-tight text-[17px] hidden sm:inline">
-            CoinCarrière
-          </span>
+        <a href="#top" data-testid="nav-logo" className="flex items-center group">
+          <img
+            src="/brand/coincarriere-logo.png"
+            alt="CoinCarrière"
+            className="h-12 sm:h-14 w-auto object-contain select-none"
+            draggable={false}
+          />
         </a>
 
         {/* Desktop links */}
