@@ -32,7 +32,7 @@ function Landing() {
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL || "/app"}>
+    <BrowserRouter basename={process.env.PUBLIC_URL || "/coincarriere-riads"}>
       <Routes>
         <Route path="/" element={<Landing />} />
       </Routes>
