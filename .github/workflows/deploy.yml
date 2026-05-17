@@ -45,7 +45,7 @@ jobs:
         run: npm install ajv@8.17.1 ajv-keywords@5.1.0 --legacy-peer-deps
 
       - name: Build React app for GitHub Pages
-        run: CI=false PUBLIC_URL=/coincarriere-riads GENERATE_SOURCEMAP=false npm run build
+        run: CI=false PUBLIC_URL=/LP GENERATE_SOURCEMAP=false npm run build
 
       - name: Prepare GitHub Pages output
         run: |
